@@ -1,7 +1,3 @@
-# Plano
-
-
-
 ## Conceitos
 - A.I
 - API Rest
@@ -40,5 +36,5 @@
 - GIT
 - Docker
 - Tensor flow
+- Firebase
 
-- Sistemas Operacionais Modernos

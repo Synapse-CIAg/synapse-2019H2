@@ -23,7 +23,7 @@
 - Algumas queries e conceitos
 
 
-## BD um pouco mais aprofundado - 15/10/2019
+## BD um pouco mais aprofundado 15/10/2019
 - Inner join e outros joins
 
 ## Unknown 22/10/2019

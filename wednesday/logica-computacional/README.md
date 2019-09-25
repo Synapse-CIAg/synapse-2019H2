@@ -14,7 +14,7 @@ _paginate: false
 # Agenda
 
 - Números Binários
-- Algebra Booleana
+- Álgebra Booleana
 - Soma de Produtos & Produto de Somas
 - Axiomas
 - Mapa de Karnaugh
@@ -84,17 +84,17 @@ Conversão do 14, divisões sucessivas por 2
 |       |       |       | Resta | **1** | 0   |
 |       |       |       |       |       | FIM |
 
-Utlizar os restos de forma inversa, **1110**
+Utilizar os restos de forma inversa, **1110**
 
 ---
 
-<!-- header: Algebra Booleana -->
+<!-- header: Álgebra Booleana -->
 
-# Algebra Booleana
+# Álgebra Booleana
 
 ---
 
-# Lócica _Não_
+# Lógica _Não_
 
 | A   | Y   |
 | --- | --- |
@@ -105,7 +105,7 @@ Utlizar os restos de forma inversa, **1110**
 
 ---
 
-# Lócica _E_
+# Lógica _E_
 
 | A   | B   | Y   |
 | --- | --- | --- |
@@ -118,7 +118,7 @@ Utlizar os restos de forma inversa, **1110**
 
 ---
 
-# Lócica _OU_
+# Lógica _OU_
 
 | A   | B   | Y   |
 | --- | --- | --- |
@@ -131,7 +131,7 @@ Utlizar os restos de forma inversa, **1110**
 
 ---
 
-# Lócica _OU Exclusivo_
+# Lógica _OU Exclusivo_
 
 | A   | B   | Y   |
 | --- | --- | --- |
@@ -144,7 +144,7 @@ Utlizar os restos de forma inversa, **1110**
 
 ---
 
-# Lócica _OU Exclusivo Negado_
+# Lógica _OU Exclusivo Negado_
 
 | A   | B   | Y   |
 | --- | --- | --- |

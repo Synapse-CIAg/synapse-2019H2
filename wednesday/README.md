@@ -31,7 +31,8 @@ Projeto no GIT
 - Circuitos Lógicos
   - Memoria
   - Multiplexador
-  - Somador Completo
+  - Contador
+  - ULA
 - Assembly
   - MIPS
 

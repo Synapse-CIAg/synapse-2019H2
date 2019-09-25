@@ -196,3 +196,64 @@ Utlizar os restos de forma inversa, **1110**
 `( A + B ).( A' + B' )`
 
 ---
+
+<!-- header: Axiomas -->
+
+# Axiomas
+
+---
+
+# Elemento Neutro
+
+`A + 0 = A`
+`A . 1 = A`
+
+---
+
+# Elemento Absorvente
+
+`A + 1 = 1`
+`A . 0 = 0`
+
+---
+
+# Idempotência
+
+`A + A = A`
+`A . A = A`
+
+---
+
+# Involução
+
+`(A')' = A`
+
+---
+
+# Complementaridade
+
+`A + A' = 1`
+`A . A' = 0`
+
+---
+
+# Comutatividade
+
+`A + B = B + A`
+`A . B = B . A`
+
+---
+
+# Associatividade
+
+`(A + B) + C = A + (B + C)`
+`(A . B) . C = A . (B . C)`
+
+---
+
+# Distributividade
+
+`A . ( B + C ) = A.B + A.C`
+`A + ( B . C ) = (A + B) . ( A + C)`
+
+---

@@ -1,7 +1,7 @@
 ---
 marp: true
 paginate: true
-#footer: Copyright © 2019, Éttore Leandro Tognoli
+footer: Lógica Computacional
 _paginate: false
 ---
 
@@ -10,8 +10,6 @@ _paginate: false
 ##### Éttore Leandro Tognoli
 
 ---
-
-<!-- header: Lógica Computacional -->
 
 # Agenda
 
@@ -255,5 +253,61 @@ Utlizar os restos de forma inversa, **1110**
 
 `A . ( B + C ) = A.B + A.C`
 `A + ( B . C ) = (A + B) . ( A + C)`
+
+---
+
+# Soma de Produtos da Lógica OU
+
+| A   | B   | Y     | Produto |
+| --- | --- | ----- | ------- |
+| 0   | 0   | 0     |         |
+| 0   | 1   | **1** | `A'.B`  |
+| 1   | 0   | **1** | `A.B'`  |
+| 1   | 1   | **1** | `A.B`   |
+
+`A'.B + A.B' + A.B`
+
+`A + B`
+
+---
+
+`A'.B + A.B' + A.B`
+`A'.B + A.(B' + B)`
+`A'.B + A.1`
+`A'.B + A`
+`(A' + A) . (B + A)`
+`1 . ( B + A)`
+`B + A`
+
+---
+
+# Produto de Somas da Lógica E
+
+| A   | B   | Y     | Somas    |
+| --- | --- | ----- | -------- |
+| 0   | 0   | **0** | `A + B`  |
+| 0   | 1   | **0** | `A + B'` |
+| 1   | 0   | **0** | `A' + B` |
+| 1   | 1   | 1     |          |
+
+`( A + B ) . ( A + B') . ( A' + B )`
+
+`A . B`
+
+---
+
+`( A + B ) . ( A + B') . ( A' + B )`
+`A . ( B + B' ) . ( A' + B )`
+`A . 1 . ( A' + B )`
+`A . ( A' + B )`
+`( A . A' ) + ( A . B )`
+`0 + ( A . B )`
+`A . B`
+
+---
+
+<!-- header: Mapa de Karnaugh -->
+
+# Mapa de Karnaugh
 
 ---

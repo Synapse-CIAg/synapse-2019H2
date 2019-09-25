@@ -19,7 +19,7 @@
 
 Projeto no GIT
 
-## Lógica Computacional 25/09/2019
+## [Lógica Computacional 25/09/2019](./logica-computacional/README.md)
 
 - Algebra Booleana
 - Soma de Produtos e Produto de Somas

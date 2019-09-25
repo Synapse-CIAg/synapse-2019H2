@@ -9,8 +9,6 @@ _paginate: false
 
 ##### Éttore Leandro Tognoli
 
----
-
 # Agenda
 
 - Números Binários
@@ -269,6 +267,8 @@ Utilizar os restos de forma inversa, **1110**
 
 `A + B`
 
+![bg 20%](https://pbs.twimg.com/profile_images/558650175430746113/86qLqaUq_400x400.png)
+
 ---
 
 `A'.B + A.B' + A.B`
@@ -278,6 +278,8 @@ Utilizar os restos de forma inversa, **1110**
 `(A' + A) . (B + A)`
 `1 . ( B + A)`
 `B + A`
+
+![bg 30%](https://www.jovinet.es/wp-content/uploads/2016/04/Homer-thinking.jpg)
 
 ---
 
@@ -294,6 +296,8 @@ Utilizar os restos de forma inversa, **1110**
 
 `A . B`
 
+![bg 20%](https://pbs.twimg.com/profile_images/558650175430746113/86qLqaUq_400x400.png)
+
 ---
 
 `( A + B ) . ( A + B') . ( A' + B )`
@@ -303,6 +307,8 @@ Utilizar os restos de forma inversa, **1110**
 `( A . A' ) + ( A . B )`
 `0 + ( A . B )`
 `A . B`
+
+![bg 30%](https://www.jovinet.es/wp-content/uploads/2016/04/Homer-thinking.jpg)
 
 ---
 
@@ -366,7 +372,15 @@ Utilizar os restos de forma inversa, **1110**
 
 ---
 
-# Prática - Construir um somador completo
+<!-- header: Prática -->
+
+# Prática
+
+![bg 50%](https://media3.giphy.com/media/3mKBXLpYeLzUY/giphy.gif)
+
+---
+
+# Construir um somador completo
 
 |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- |
@@ -387,4 +401,10 @@ https://logic.ly/
 https://circuitverse.org/
 http://boolr.me/
 
+---
+
+<!-- header: Lógica Computacional -->
+
 # Obrigado!
+
+![bg 50%](https://i.pinimg.com/originals/50/5a/d3/505ad3c84cc53ef72fe113191580a23c.gif)

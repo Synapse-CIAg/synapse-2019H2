@@ -95,3 +95,104 @@ Utlizar os restos de forma inversa, **1110**
 # Algebra Booleana
 
 ---
+
+# Lócica _Não_
+
+| A   | Y   |
+| --- | --- |
+| 0   | 1   |
+| 1   | 0   |
+
+![bg 80%](https://www.tutorialspoint.com/digital_circuits/images/not_gate.jpg)
+
+---
+
+# Lócica _E_
+
+| A   | B   | Y   |
+| --- | --- | --- |
+| 0   | 0   | 0   |
+| 0   | 1   | 0   |
+| 1   | 0   | 0   |
+| 1   | 1   | 1   |
+
+![bg 80%](https://www.tutorialspoint.com/digital_circuits/images/and_gate.jpg)
+
+---
+
+# Lócica _OU_
+
+| A   | B   | Y   |
+| --- | --- | --- |
+| 0   | 0   | 0   |
+| 0   | 1   | 1   |
+| 1   | 0   | 1   |
+| 1   | 1   | 1   |
+
+![bg 80%](https://www.tutorialspoint.com/digital_circuits/images/or_gate.jpg)
+
+---
+
+# Lócica _OU Exclusivo_
+
+| A   | B   | Y   |
+| --- | --- | --- |
+| 0   | 0   | 0   |
+| 0   | 1   | 1   |
+| 1   | 0   | 1   |
+| 1   | 1   | 0   |
+
+![bg 80%](https://www.tutorialspoint.com/digital_circuits/images/exor_gate.jpg)
+
+---
+
+# Lócica _OU Exclusivo Negado_
+
+| A   | B   | Y   |
+| --- | --- | --- |
+| 0   | 0   | 1   |
+| 0   | 1   | 0   |
+| 1   | 0   | 0   |
+| 1   | 1   | 1   |
+
+![bg 80%](https://www.tutorialspoint.com/digital_circuits/images/exnor_gate.jpg)
+
+---
+
+<!-- header: Soma de Produtos -->
+
+# Soma de Produtos
+
+---
+
+# XOR
+
+| A   | B   | Y     | Produto |
+| --- | --- | ----- | ------- |
+| 0   | 0   | 0     |         |
+| 0   | 1   | **1** | `A'.B`  |
+| 1   | 0   | **1** | `A.B'`  |
+| 1   | 1   | 0     |         |
+
+`A'.B + A.B'`
+
+---
+
+<!-- header: Produto de Somas -->
+
+# Produto de Somas
+
+---
+
+# XOR
+
+| A   | B   | Y     | Somas     |
+| --- | --- | ----- | --------- |
+| 0   | 0   | **0** | `A + B`   |
+| 0   | 1   | 1     |           |
+| 1   | 0   | 1     |           |
+| 1   | 1   | **0** | `A' + B'` |
+
+`( A + B ).( A' + B' )`
+
+---

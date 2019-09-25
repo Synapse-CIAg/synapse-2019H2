@@ -73,7 +73,7 @@ _paginate: false
 
 # Decimal para Binário
 
-Conversão do 14, divisão sucessivas por 2
+Conversão do 14, divisões sucessivas por 2
 
 |       |       |       |       |       |     |
 | ----- | ----- | ----- | ----- | ----- | --- |

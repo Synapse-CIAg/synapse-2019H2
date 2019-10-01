@@ -36,7 +36,7 @@ _paginate: false
 * Subtração
 * Multiplexador e Demultiplexador
 * ULA
-* Memoria
+* Memória
 * Contador
 * Assembly
 
@@ -108,6 +108,20 @@ _paginate: false
 # ULA
 
 ![](http://antigo.fpgaparatodos.com.br/newsite/images/stories/exemplo/ULA/ULA_diagrama.png)
+
+---
+
+<!-- header: Memória -->
+
+# FlipFlop
+
+![](https://upload.wikimedia.org/wikipedia/commons/e/e1/SR_%28Clocked%29_Flip-flop_Diagram.svg)
+
+---
+
+# FlipFlop D
+
+![bg 30%](https://upload.wikimedia.org/wikipedia/commons/8/8c/D-Type_Flip-flop.svg)
 
 ---
 

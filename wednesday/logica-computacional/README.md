@@ -1,13 +1,30 @@
 ---
 marp: true
 paginate: true
-footer: Lógica Computacional
+backgroundImage: url('../../assets/background.png');
+color: #3A3A3A;
+style: |
+  header {
+      color: #FFFFFF;
+      font-weight: bold;
+  }
+  footer {
+      font-weight: bold;
+      color: #5A5A5A;
+  }
+  img {
+      background-color: #0000;
+  }
 _paginate: false
 ---
+
+<!-- _backgroundImage: url('../../assets/raw-background.png'); -->
 
 # Lógica Computacional
 
 ##### Éttore Leandro Tognoli
+
+---
 
 # Agenda
 
@@ -19,6 +36,7 @@ _paginate: false
 
 ---
 
+<!-- footer: Lógica Computacional -->
 <!-- header: Números Binários -->
 
 # Números Binários

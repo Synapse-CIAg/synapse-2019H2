@@ -38,7 +38,7 @@ _paginate: false
 * ULA
 * Memória
 * Contador
-* Assembly
+* Assembly & MIPS
 
 ---
 
@@ -127,6 +127,22 @@ https://github.com/hneemann/Digital/releases/download/v0.23/Digital.zip
 # FlipFlop D
 
 ![bg 30%](https://upload.wikimedia.org/wikipedia/commons/8/8c/D-Type_Flip-flop.svg)
+
+---
+
+# MIPS
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/MIPS_Architecture_%28Pipelined%29.svg/1920px-MIPS_Architecture_%28Pipelined%29.svg.png)
+
+---
+
+# MIPS
+
+https://pt.wikipedia.org/wiki/Arquitetura_MIPS
+
+https://dannyqiu.me/mips-interpreter/
+https://visualmips.github.io/
+https://rivoire.cs.sonoma.edu/cs351/wemips/
 
 ---
 

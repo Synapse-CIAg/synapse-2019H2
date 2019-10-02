@@ -42,6 +42,13 @@ _paginate: false
 
 ---
 
+# Digital
+
+https://github.com/hneemann/Digital
+https://github.com/hneemann/Digital/releases/download/v0.23/Digital.zip
+
+---
+
 <!-- footer: Arquitetura de Computadores -->
 <!-- header: ULA -->
 # Somador Completo
@@ -101,8 +108,6 @@ _paginate: false
 | 0  | 1 | 0  | 1  |
 | 1  | 0 | 0  | 0  |
 | 1  | 1 | 1  | 0  |
-
----
 
 ---
 # ULA

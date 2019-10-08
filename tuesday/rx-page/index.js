@@ -32,10 +32,10 @@ fromEvent($input, 'keyup').pipe(
     
 );
 
-// $("button").click(function(){
-//     $.getJSON("paises.json", function(result){
-//       $.each(result, function(i, field){
-//         $("div").append(field.nome + " ");
-//       });
-//     });
-//   });
+$("button").click(function(){
+    $.getJSON("paises.json", function(result){
+      $.each(result, function(i, field){
+        $("p").append(field.nome + " ");
+      });
+    });
+  });

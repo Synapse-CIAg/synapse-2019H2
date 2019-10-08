@@ -1,0 +1,18 @@
+{
+  "name": "rx-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Leonardo Lima <leonardo.lima@ciag.org.br>",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^6.5.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.2"
+  }
+}

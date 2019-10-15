@@ -1,7 +1,7 @@
 ---
 marp: true
 paginate: true
-backgroundImage: url('../../assets/background.png'); 
+backgroundImage: url('../../../assets/background.png'); 
 color: #3A3A3A; 
 style: |
   header {

@@ -178,6 +178,14 @@ INSERT INTO person VALUES (1, 'Diego', 'Silva', '40173281800', 24);
 
 ---
 
+# Select
+
+```sql
+SELECT * FROM person;
+```
+
+---
+
 # UPDATING A DOC
 
 ```sql

@@ -3,14 +3,13 @@
 - [Intro 18/09/2019](#intro-18092019)
 - [Lógica Computacional 25/09/2019](#lógica-computacional-25092019)
 - [Arquitetura de Computadores 02/10/2019](#arquitetura-de-computadores-02102019)
-- [Programação Imperativa 09/10/2019](#programação-imperativa-09102019)
-- [Ponteiros e Referências 16/10/2019](#ponteiros-e-referências-16102019)
-- [Recursividade e Complexidade 23/10/2019](#recursividade-e-complexidade-23102019)
-- [Programação Orientada a Objetos 30/10/2019](#programação-orientada-a-objetos-30102019)
-- [Programação Funcional 06/11/2019](#programação-funcional-06112019)
-- [Tipos Genéricos 13/11/2019](#tipos-genéricos-13112019)
-- [Unknown 20/11/2019](#unknown-20112019)
-- [Unknown 27/11/2019](#unknown-27112019)
+- [Arquitetura de Computadores 09/10/2019](#arquitetura-de-computadores-09102019)
+- [Programação Imperativa 23/10/2019](#programação-imperativa-23102019)
+- [Ponteiros e Referências 30/10/2019](#ponteiros-e-referências-30102019)
+- [Recursividade e Complexidade 06/11/2019](#recursividade-e-complexidade-06112019)
+- [Programação Orientada a Objetos 13/11/2019](#programação-orientada-a-objetos-13112019)
+- [Programação Funcional 20/11/2019](#programação-funcional-20112019)
+- [Tipos Genéricos 27/11/2019](#tipos-genéricos-27112019)
 - [Unknown 04/12/2019](#unknown-04122019)
 
 ## Intro 18/09/2019
@@ -26,17 +25,25 @@ Projeto no GIT
 - Axiomas
 - Mapa de Karnaugh
 
-## Arquitetura de Computadores 02/10/2019
+## [Arquitetura de Computadores 02/10/2019](./arquitetura-de-computadores/README.md)
 
 - Circuitos Lógicos
   - Memoria
   - Multiplexador
   - Contador
   - ULA
+
+
+## [Arquitetura de Computadores 09/10/2019](./arquitetura-de-computadores/README.md)
+
 - Assembly
   - MIPS
 
-## Programação Imperativa 09/10/2019
+## Cacelada 16/10/2019
+
+-  ODSC 
+
+## Programação Imperativa 23/10/2019
 
 Linguagens
 
@@ -50,7 +57,7 @@ Assuntos
 - Estruturas de Repetição
 - Funções
 
-## Ponteiros e Referências 16/10/2019
+## Ponteiros e Referências 30/10/2019
 
 Linguagens
 
@@ -62,7 +69,7 @@ Assuntos
 - Ponteiros & Referências
 - Listas Encadeadas
 
-## Recursividade e Complexidade 23/10/2019
+## Recursividade e Complexidade 06/11/2019
 
 Linguagens
 
@@ -75,7 +82,7 @@ Assuntos
 - Árvores Binárias
 - Análise de Complexidade
 
-## Programação Orientada a Objetos 30/10/2019
+## Programação Orientada a Objetos 13/11/2019
 
 Linguagens
 
@@ -83,7 +90,7 @@ Linguagens
 - C++
 - Python
 
-## Programação Funcional 06/11/2019
+## Programação Funcional 20/11/2019
 
 Linguagens
 
@@ -92,7 +99,7 @@ Linguagens
 - Java
 - JavaScript
 
-## Tipos Genéricos 13/11/2019
+## Tipos Genéricos 27/11/2019
 
 Linguagens
 
@@ -106,8 +113,5 @@ Assuntos
 
 - Type Hints
 
-## Unknown 20/11/2019
-
-## Unknown 27/11/2019
 
 ## Unknown 04/12/2019

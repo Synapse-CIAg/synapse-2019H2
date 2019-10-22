@@ -1,0 +1,169 @@
+---
+marp: true
+paginate: true
+backgroundImage: url('../../assets/background.png');
+color: #3A3A3A;
+style: |
+  header {
+      color: #FFFFFF;
+      font-weight: bold;
+  }
+  footer {
+      font-weight: bold;
+      color: #5A5A5A;
+  }
+  img {
+      background-color: #0000;
+  }
+_paginate: false
+---
+
+<!-- _backgroundImage: url('../../assets/raw-background.png'); -->
+
+# Programação Imperativa
+
+##### Éttore Leandro Tognoli
+
+---
+
+# Agenda
+
+- Variáveis e Atribuição
+- Operações
+- Estruturas de Controle
+- Estruturas de Repetição
+- Funções
+- Entrada e Saída
+
+---
+
+<!-- footer: Programação Imperativa -->
+<!-- header: Números Binários -->
+
+
+# Variáveis e Atribuição
+
+```python
+var1 = 1
+var2 = 1.5
+var3 = 'l'
+var4 = 'teste'
+var5 = True
+
+```
+---
+
+# Variáveis e Atribuição
+
+```c
+int var1 = 1;
+long var1 = 1;
+short var1 = 1;
+float var2 = 1.5;
+double var2 = 1.5;
+char var3 = 'l';
+char* var4 = "teste";
+bool var5 = true;
+```
+---
+# Variáveis e Atribuição
+
+```python
+var1 = 1
+var2 = var1
+var1 = 2
+```
+---
+
+# Variáveis e Atribuição
+
+```c
+int var1 = 1;
+int var2 = var1;
+var1 = 2;
+```
+
+---
+
+# Variáveis
+
+Declaração
+Tipo
+
+---
+
+# Atribuição
+
+Destrutivo
+
+---
+
+# Operações
+
+```python
+
+a = 1
+b = 12
+c = -13
+
+delta = b ** 2 - 4 * a * c
+x0 = (-b + delta**0.5) / 2 * a
+x1 = (-b - delta**0.5) / 2 * a
+
+```
+
+---
+
+# Operações
+
+```c
+#include <math.h>
+
+double a = 1.;
+double b = 12.;
+double c = -13.;
+
+int main(int argc, char ** argv) {
+    double delta = pow(b,2.) - 4. * a * c;
+    double x0 = (-b + pow(delta,0.5)) / 2. * a;
+    double x1 = (-b - pow(delta,0.5)) / 2. * a;
+}
+
+```
+
+---
+
+# Operações
+
+```python
+
+a = True
+b = False
+
+a or b
+a and b
+
+```
+
+---
+
+# Operações
+
+
+```c
+
+bool a = true;
+bool b = false;
+
+a || b;
+a && b;
+
+```
+
+---
+
+<!-- header: Lógica Computacional -->
+
+# Obrigado!
+
+![bg 50%](https://i.pinimg.com/originals/50/5a/d3/505ad3c84cc53ef72fe113191580a23c.gif)

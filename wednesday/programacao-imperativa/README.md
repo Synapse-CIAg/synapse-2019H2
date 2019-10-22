@@ -228,10 +228,120 @@ int main(int argc, char** argv) {
 ```
 ---
 
+# Estruturas de Controle
+
+```python
+
+if True:
+    pass
+
+```
+
+---
+
+# Estruturas de Controle
+
+```python
+
+if True:
+    pass
+else:
+    pass
+
+```
+---
+
+# Estruturas de Controle
+
+```c
+int main(int argc, char** argv){
+    if(true){
+
+    }
+    else{
+
+    }
+}
+
+```
+
+---
+
+# Estruturas de Controle
+
+```c
+int value = 1;
+
+int main(int argc, char** argv){
+    switch(value){
+        case 1:
+        // ...
+        break;
+        default:
+        // ...
+    }
+}
+
+```
+---
+
+# Estruturas de Repetição
+
+```python
+while True:
+    pass
+```
+
+---
+# Estruturas de Repetição
+
+```python
+counter = 0
+while counter < 10:
+    counter += 1
+
+```
+---
+# Estruturas de Repetição
+
+```c
+int main(int argc, char** argv){
+    int counter = 0;
+    while(counter < 10){
+        counter += 1;
+    }
+}
+
+```
+---
+# Estruturas de Repetição
+
+```c
+int main(int argc, char** argv){
+    int counter = 0;
+    do {
+        counter += 1;
+    }
+    while(counter < 10);
+}
+
+```
+---
+
+# Estruturas de Repetição
+
+```c
+int main(int argc, char** argv){
+    for(int counter=0;counter<10;counter+=1){
+        
+    }
+}
+
+```
+---
 
 
-
-<!-- header: Lógica Computacional -->
+<!-- header: Programação Imperativa -->
 
 # Obrigado!
 

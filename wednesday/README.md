@@ -43,7 +43,7 @@ Projeto no GIT
 
 -  ODSC 
 
-## Programação Imperativa 23/10/2019
+## [Programação Imperativa 23/10/2019](./programacao-imperativa/README.md)
 
 Linguagens
 

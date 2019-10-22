@@ -29,7 +29,7 @@ _paginate: false
 # Agenda
 
 - Variáveis e Atribuição
-- Operações
+- Operações e Comparações
 - Estruturas de Controle
 - Estruturas de Repetição
 - Funções
@@ -98,7 +98,7 @@ Destrutivo
 
 ---
 
-# Operações
+# Operações Matemáticas
 
 ```python
 
@@ -114,7 +114,7 @@ x1 = (-b - delta**0.5) / 2 * a
 
 ---
 
-# Operações
+# Operações Matemáticas
 
 ```c
 #include <math.h>
@@ -133,7 +133,7 @@ int main(int argc, char ** argv) {
 
 ---
 
-# Operações
+# Operações Booleanas
 
 ```python
 
@@ -147,7 +147,7 @@ a and b
 
 ---
 
-# Operações
+# Operações Booleanas
 
 
 ```c
@@ -161,6 +161,38 @@ a && b;
 ```
 
 ---
+
+# Operações Binárias
+
+```python
+
+a = 127
+b = 15
+a & b
+a | b
+a ^ b
+a << 1
+b >> 1
+
+```
+---
+
+# Operações Binárias
+
+```c
+unsigned char a = 127;
+unsigned char b = 15;
+
+int main(int argc, char ** argv) {
+    a & b;
+    a | b;
+    a ^ b;
+    a << 1;
+    b >> 1;
+}
+```
+---
+
 
 <!-- header: Lógica Computacional -->
 

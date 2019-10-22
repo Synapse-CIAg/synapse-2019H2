@@ -133,6 +133,14 @@ int main(int argc, char ** argv) {
 
 ---
 
+# Operações Matemáticas
+
+| Simbolo | Operação         |
+|---------|------------------|
+| `%`     | Resto da Divisão |
+
+---
+
 # Operações Booleanas
 
 ```python
@@ -333,8 +341,47 @@ int main(int argc, char** argv){
 ```c
 int main(int argc, char** argv){
     for(int counter=0;counter<10;counter+=1){
-        
+
     }
+}
+
+```
+---
+
+# Funções
+
+```python
+
+def funcao(parametro):
+    return parametro * 2
+
+funcao(3)
+
+```
+---
+
+# Funções
+
+```python
+
+def funcao(parametro : int) -> int:
+    return parametro * 2
+
+funcao(4)
+
+```
+---
+
+# Funções
+
+```c
+
+int funcao(int parametro) {
+    return parametro * 2;
+}
+
+int main(int argc, char** argv){
+    funcao(5);
 }
 
 ```

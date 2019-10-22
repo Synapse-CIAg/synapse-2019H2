@@ -193,6 +193,43 @@ int main(int argc, char ** argv) {
 ```
 ---
 
+# Comparações
+
+```python
+
+a = 10
+b = 5
+
+a > b
+a >= b
+a < b
+a <= b
+a != b
+a == b
+
+```
+
+---
+
+# Comparações
+
+```c
+int a = 10;
+int b = 5;
+
+int main(int argc, char** argv) {
+    a > b;
+    a >= b;
+    a < b;
+    a <= b;
+    a == b;
+    a != b;
+}
+```
+---
+
+
+
 
 <!-- header: Lógica Computacional -->
 

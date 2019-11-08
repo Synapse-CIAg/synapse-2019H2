@@ -5,10 +5,7 @@ from database import db
 class BookResource():
 
     def on_get(self, request, resp):
-
         cursor = db.cursor(dictionary=True)
-
-        # cur.execute("SELECT * FROM books WHERE title = %s AND id = %s;", (1))
         cursor.execute("SELECT * FROM books")
 
         resp.status = falcon.HTTP_200

@@ -9,6 +9,7 @@ app = falcon.API()
 
 # authors
 app.add_route('/authors', AuthorResource())
+app.add_route('/authors/{id}', AuthorResource(), suffix='author')
 
 # books
 app.add_route('/books', BookResource())

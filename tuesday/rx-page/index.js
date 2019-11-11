@@ -18,8 +18,7 @@ const $results = $('#results');
 
 fromEvent($input, 'keyup').pipe(
     map(e => e.target.value),
-    tap(e => console.log(e)),
-    filter(text => text.lenght > 2),
+    filter(text => text.length > 2),
     debounceTime(500),
     distinctUntilChanged(),
     switchMap(searchCountries),

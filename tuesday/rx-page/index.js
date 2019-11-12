@@ -1,18 +1,6 @@
-const { fromEvent } = rxjs;
+const { fromEvent, from } = rxjs;
 const { tap, debounceTime, filter, map, distinctUntilChanged, subscribe, switchMap } = rxjs.operators;
 
-function searchCountries () {
-    return $.getJSON( "paises.json")
-    // return $.ajax({
-    //     url: '',
-    //     dataType: 'json',
-    //     data: {
-    //         action: 'search',
-    //         format: 'json',
-    //         search: term
-    //     }
-    // }).promise();
-}
 const $input = document.querySelector('#textInput');
 const $results = $('#results');
 
@@ -21,20 +9,27 @@ fromEvent($input, 'keyup').pipe(
     filter(text => text.length > 2),
     debounceTime(500),
     distinctUntilChanged(),
-    switchMap(searchCountries),
-    tap(a => console.log('after switch', a))
+    switchMap(query => searchCountries(query)),
 ).subscribe(
-    next => { console.log(next) },
-    // ([,data]) => $results.empty().append(data.map(v => $('<li>').text(v))),
+    countries => { displayCountries(countries) },
     error => $results.empty().append($('<li>')).text('Error:' + error)
-    
-    
 );
 
-$("button").click(function(){
-    $.getJSON("paises.json", function(result){
-      $.each(result, function(i, field){
-        $("p").append(field.nome + " ");
-      });
-    });
+function queryMatches(countries, query) {
+  const lowerQuery = query.toLowerCase();
+  return countries.filter(country => {
+    const lowerName = country.nome.toLowerCase();
+    return lowerName.indexOf(lowerQuery) != -1;
   });
+}
+
+function searchCountries (query) {
+  return from($.getJSON( "paises.json")).pipe(
+    map(countries => queryMatches(countries, query))
+  );
+}
+
+function displayCountries(countries) {
+  const countryNames = countries.map(country => country.nome); 
+  $results.empty().append(countryNames.map(v => $('<li>').text(v)))
+}

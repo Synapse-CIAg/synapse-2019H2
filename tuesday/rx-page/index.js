@@ -1,4 +1,4 @@
-const { fromEvent, from } = rxjs;
+const { fromEvent, from, combineLatest } = rxjs;
 const { tap, debounceTime, filter, map, distinctUntilChanged, subscribe, switchMap } = rxjs.operators;
 
 const $input = document.querySelector('#textInput');
@@ -29,7 +29,25 @@ function searchCountries (query) {
   );
 }
 
-function displayCountries(countries) {
-  const countryNames = countries.map(country => country.nome); 
-  $results.empty().append(countryNames.map(v => $('<li>').text(v)))
+const $name = document.querySelector('#nameInput');
+const $password = document.querySelector('#passwordInput');
+
+function getValidEvents(input, predicate) {
+  return fromEvent(input, 'keyup').pipe(
+    map(e => e.target.value),
+    map(text => predicate(text)),
+  );
+}
+
+const $validPassword = getValidEvents($password, text => text.length > 2)
+const $validName = getValidEvents($name, text => text.length > 2 && text.indexOf('@') != -1)
+
+combineLatest($validPassword, $validName).pipe(
+  map(states => states.every(state => state === true)),
+).subscribe(
+  (state) => { changeButton(state); },
+);
+
+function changeButton(state) {
+  document.getElementById('sendButton').disabled = !state
 }

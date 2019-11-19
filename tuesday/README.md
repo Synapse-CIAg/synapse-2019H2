@@ -4,7 +4,7 @@
 - [Basic concepts 01/10/2019](#basic-concepts-01102019)
 - [First task 08/10/2019](#first-task-08102019)
 - [Second task 12/11/2019](#second-task-12112019)
-- [Unknown 19/11/2019](#unknown-19112019)
+- [Third task 19/11/2019](#third-task-19112019)
 - [Unknown 26/11/2019](#unknown-26112019)
 - [Unknown 03/12/2019](#unknown-03122019)
 
@@ -46,7 +46,11 @@ Validação:
 Sugestão de operador:
 https://www.learnrxjs.io/operators/combination/combinelatest.html
 
-## Unknown 19/11/2019
+## Third task 19/11/2019
+
+Criar um mecanismo de polling, que consultará uma API REST a cada 4 segundos - utilizando RxJS
+
+O polling deverá conter uma estratégia de `retry` de forma exponencial (backoff exponencial). Sempre que a API retornar um código de erro, o algoritmo sempre deve esperar o dobro de tempo para tentar novamente.
 
 ## Unknown 26/11/2019
 

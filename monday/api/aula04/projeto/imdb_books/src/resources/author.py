@@ -6,7 +6,7 @@ from database import db
 class AuthorResource():
 
     def on_get(self, request, resp):
-        cursor = db.cursor(dictionary=True)
+        cursor = db.cursor()
         cursor.execute("SELECT * FROM authors")
 
         resp.status = falcon.HTTP_200
@@ -17,7 +17,7 @@ class AuthorResource():
             identificador = int(id)
         except:
             erro = {
-                'mensagem': 'Id informado inválido'
+                'mensagem': 'Id informado invalido'
             }
             resp.status = falcon.HTTP_400
             resp.body = json.dumps(erro)
@@ -45,7 +45,7 @@ class AuthorResource():
             identificador = int(id)
         except:
             erro = {
-                'mensagem': 'Id informado inválido'
+                'mensagem': 'Id informado invalido'
             }
             resp.status = falcon.HTTP_400
             resp.body = json.dumps(erro)
@@ -58,7 +58,7 @@ class AuthorResource():
 
         if (autor is None):
             erro = {
-                'mensagem': 'Não há registro de autor para o id informado.'
+                'mensagem': 'Nao ha registro de autor para o id informado.'
             }
             resp.status = falcon.HTTP_400
             resp.body = json.dumps(erro)
@@ -79,7 +79,7 @@ class AuthorResource():
             identificador = int(id)
         except:
             erro = {
-                'mensagem': 'Id informado inválido'
+                'mensagem': 'Id informado invalido'
             }
             resp.status = falcon.HTTP_400
             resp.body = json.dumps(erro)

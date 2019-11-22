@@ -1,41 +1,53 @@
-const { fromEvent } = rxjs;
+const { fromEvent, from, combineLatest } = rxjs;
 const { tap, debounceTime, filter, map, distinctUntilChanged, subscribe, switchMap } = rxjs.operators;
 
-function searchCountries () {
-    return $.getJSON( "paises.json")
-    // return $.ajax({
-    //     url: '',
-    //     dataType: 'json',
-    //     data: {
-    //         action: 'search',
-    //         format: 'json',
-    //         search: term
-    //     }
-    // }).promise();
-}
 const $input = document.querySelector('#textInput');
 const $results = $('#results');
 
 fromEvent($input, 'keyup').pipe(
     map(e => e.target.value),
-    tap(e => console.log(e)),
-    filter(text => text.lenght > 2),
+    filter(text => text.length > 2),
     debounceTime(500),
     distinctUntilChanged(),
-    switchMap(searchCountries),
-    tap(a => console.log('after switch', a))
+    switchMap(query => searchCountries(query)),
 ).subscribe(
-    next => { console.log(next) },
-    // ([,data]) => $results.empty().append(data.map(v => $('<li>').text(v))),
+    countries => { displayCountries(countries) },
     error => $results.empty().append($('<li>')).text('Error:' + error)
-    
-    
 );
 
-$("button").click(function(){
-    $.getJSON("paises.json", function(result){
-      $.each(result, function(i, field){
-        $("p").append(field.nome + " ");
-      });
-    });
+function queryMatches(countries, query) {
+  const lowerQuery = query.toLowerCase();
+  return countries.filter(country => {
+    const lowerName = country.nome.toLowerCase();
+    return lowerName.indexOf(lowerQuery) != -1;
   });
+}
+
+function searchCountries (query) {
+  return from($.getJSON( "paises.json")).pipe(
+    map(countries => queryMatches(countries, query))
+  );
+}
+
+const $name = document.querySelector('#nameInput');
+const $password = document.querySelector('#passwordInput');
+
+function getValidEvents(input, predicate) {
+  return fromEvent(input, 'keyup').pipe(
+    map(e => e.target.value),
+    map(text => predicate(text)),
+  );
+}
+
+const $validPassword = getValidEvents($password, text => text.length > 2)
+const $validName = getValidEvents($name, text => text.length > 2 && text.indexOf('@') != -1)
+
+combineLatest($validPassword, $validName).pipe(
+  map(states => states.every(state => state === true)),
+).subscribe(
+  (state) => { changeButton(state); },
+);
+
+function changeButton(state) {
+  document.getElementById('sendButton').disabled = !state
+}
